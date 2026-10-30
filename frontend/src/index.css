@@ -1,0 +1,148 @@
+:root {
+  --font-color: hsl(0, 0%, 95%);
+  --font-color-pressed: hsl(0, 0%, 75%);
+  --background-color: hsl(0, 0%, 8%);
+  --overlay-color: hsl(0, 0%, 12%); 
+  --accent-color: #ff6a00;
+  --accent-color-pressed: hsl(25, 100%, 35%);
+  --border-color: hsl(0, 0%, 50%);
+  --border-color-pressed: hsl(0, 0%, 30%);
+}
+
+* {
+  font-family: "Google Sans Flex", sans-serif;
+  color: var(--font-color);
+}
+
+body {
+  background-color: var(--background-color);
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.header {
+  width: 100vw;
+  height: 7rem;
+  /*background-color: var(--overlay-color);
+  border-bottom: 2px solid grey;*/
+  margin: 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.Button {
+
+}
+
+.headerButton {
+  margin: 0 1.5rem;
+  width: 8rem;
+  height: 3.5rem;
+  
+
+}
+
+.authButton {
+  width: 22rem;
+  margin: 0 0 1rem 0;
+  height: 3.5rem;
+}
+
+.loginText {
+  margin: 2.5rem 0;
+  
+  text-align: center;
+  color: var(--font-color-pressed);
+}
+
+.bold {
+  font-weight: 500;
+}
+
+
+.nonAccentButton {
+  background: var(--background-color);
+  border-radius: 1.75rem;
+  
+  
+  border: 0.1rem solid var(--border-color);
+  
+  
+  
+  font-weight: 750;
+  font-variation-settings: "slnt" 0, "wdth" 100, "ROND" 50;
+  font-size: medium;
+  
+
+}
+
+.nonAccentButton:active {
+  border: 0.1rem solid var(--border-color-pressed);
+  
+  color: var(--font-color-pressed)
+
+}
+
+
+.accentButton {
+  background: var(--accent-color);
+  border-radius: 1.75rem;
+  
+  
+  border: none;
+  
+  
+  
+  font-weight: 750;
+  font-variation-settings: "slnt" 0, "wdth" 100, "ROND" 50;
+  font-size: medium;
+  
+
+}
+
+.accentButton:active {
+  background: var(--accent-color-pressed);
+  
+  color: var(--font-color-pressed)
+}
+
+.logo {
+  width: 4.5rem;
+  margin: 0 2rem;
+}
+
+.center {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22rem;
+
+}
+
+.bottom {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22rem;
+}
+
+
+.content {
+  width: 22rem;
+}
+
+
+
+
+

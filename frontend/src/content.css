@@ -1,0 +1,66 @@
+.date-scroll-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+
+  /* --- Scrollbar ausblenden --- */
+  -ms-overflow-style: none;  /* IE / Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.date-scroll-container::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+/* Quadratische Karte */
+.date-card {
+  flex-shrink: 0;            /* Verhindert Zusammenquetschen */
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Wochentag oben (groß) */
+.day-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Datum unten (kleiner) */
+.day-date {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* Hover-Effekt */
+.date-card:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+}
+
+/* Ausgewählter Tag */
+.date-card.active {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.date-card.active .day-name,
+.date-card.active .day-date {
+  color: #ffffff;
+}
