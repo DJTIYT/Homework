@@ -1,13 +1,20 @@
 function Login() {
-    return (
-        <>
-            <div className="bottom login">
-                <p className="bold loginText">Erstelle ein Konto oder melde dich an, um fortzufahren</p>
-                <button className="authButton nonAccentButton">Login Code (Gast)</button>
-                <button className="authButton accentButton">Email Adresse</button>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div className="flex w-88 flex-col items-center">
+        <p className="font-medium text-font-pressed text-center mb-8">
+          Erstelle ein Konto oder melde dich an, um <br />
+          fortzufahren
+        </p>
+        <button className="mb-4 bg-brand-bg border-brand-border border-2 h-14 w-88 rounded-full font-semibold font-round active:border-brand-border-pressed active:text-font-pressed">
+          Login Code (Gast)
+        </button>
+        <button className="mb-4 bg-brand-accent h-14 w-88 rounded-full font-semibold font-round active:bg-brand-accent-pressed active:text-font-pressed">
+          Email Adresse
+        </button>
+      </div>
+    </>
+  );
 }
 
-export default Login
+export default Login;
