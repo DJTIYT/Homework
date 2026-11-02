@@ -1,3 +1,7 @@
+// Adds info!(), warn!() and error!()
+mod logger;
+
+fn init_databases() {}
 fn main() {
-    println!("Hello, world!");
+    info!("Server", "Init databases");
 }
